@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'lab';
+  title = "Topics";
+  topics = [
+    "Angular modules",
+    "Basic component",
+    "Declarations",
+    "Dependency injecton",
+    "Directives",
+    "Providers",
+    "Service"
+  ];
 }
