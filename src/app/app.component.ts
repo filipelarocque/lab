@@ -12,5 +12,9 @@ export class AppComponent {
     "Inputs",
     "Outputs",
     "Class binding"
-  ]
+  ];
+  tweet;
+
+  constructor() { }
+
 }

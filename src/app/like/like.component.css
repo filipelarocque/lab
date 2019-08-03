@@ -1,0 +1,11 @@
+.clickable-icon {
+    cursor: pointer;
+}
+
+.active {
+    color: deeppink;
+}
+
+.innactive {
+    color: grey;
+}

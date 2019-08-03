@@ -1,0 +1,6 @@
+<fa-icon [icon]="['fas', 'heart']"
+    class="clickable-icon"
+    [class.active]="isActive"
+    [class.innactive]="!isActive"
+    (click)="toggleLike()"></fa-icon>
+<span>{{ likesCount }}</span>
