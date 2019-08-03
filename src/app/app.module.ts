@@ -4,13 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//  Icons
+import { IconsModule } from './modules/icons.module';
+
+//  Custom components
+import { LikeComponent } from './like/like.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
