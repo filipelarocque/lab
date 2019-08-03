@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 //  Custom components
 import { CoursesComponent } from './courses/courses.component';
+import { AuthorsComponent } from './authors/authors.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule,
