@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'lab';
+  title = 'Topics';
+  topics = [
+    "Property binding",
+    "Event binding",
+    "Font Awesome icons"
+  ];
 }
