@@ -6,8 +6,7 @@ import { FactsService } from '../services/facts.service';
 @Component({
   selector: 'app-indicator-tree',
   templateUrl: './indicator-tree.component.html',
-  styleUrls: ['./indicator-tree.component.sass'],
-  providers: [FactsService]
+  styleUrls: ['./indicator-tree.component.sass']
 })
 export class IndicatorTreeComponent implements OnInit {
 
@@ -16,10 +15,14 @@ export class IndicatorTreeComponent implements OnInit {
   ngOnInit() {
   }
 
-  getNextNodes(filteredFacts: Fact[], dimensao: string): string[] {
-    let nextNodes = new Set<string>();
-    filteredFacts.forEach( fato => nextNodes.add(fato[dimensao]) );
-    return Array.from(nextNodes).sort();
+  expand(node: ) {
+
+  }
+
+  getChildren(filteredFacts: Fact[], dimensao: string): string[] {
+    let children = new Set<string>();
+    filteredFacts.forEach( fato => children.add(fato[dimensao]) );
+    return Array.from(children).sort();
   }
 
   filterIndicator(dimensoesSelecionadas: string[], indicador?: string) {

@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 //  Components modules
 import { MatTreeModule } from '@angular/material';
 import { IndicatorTreeComponent } from './indicator-tree/indicator-tree.component';
+import { FactsService } from './services/facts.service';
+
+// Services
 
 @NgModule({
   declarations: [
@@ -20,7 +23,7 @@ import { IndicatorTreeComponent } from './indicator-tree/indicator-tree.componen
     AppRoutingModule,
     MatTreeModule
   ],
-  providers: [],
+  providers: [FactsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
